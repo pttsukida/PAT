@@ -4,6 +4,7 @@ n=(int)(raw_input())
 x=sys.stdin.readline().strip('\n').split()
 x=map(int,x)
 
+#递归方法，未通过
 def maxlist(x):
     if(len(x)==0):
         return 0
@@ -23,7 +24,7 @@ def maxrightlist(x):
             return q
         else:
             return q+a1
-
+#迭代方法 ok
 def maxlistIter(a):
     m1=0
     m2=0
